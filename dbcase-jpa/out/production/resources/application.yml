@@ -1,0 +1,27 @@
+server:
+  port: 8800
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: com.dbcase.dialect.JsonbPostgresDialect
+        temp:
+          use_jdbc_metadata_defaults: false #这个属性用于解决pgsql createClob()出现异常
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://10.144.137.1:5432/psqlTest
+    username: postgres
+    password: 111111
+    driver-class-name: org.postgresql.Driver
+    #springboot2.0默认使用hikari作为数据库连接池
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 50
+      connection-timeout: 30000
+      connection-test-query: select 1
+      max-lifetime: 1800000
+
+

@@ -1,0 +1,9 @@
+bootJar{
+    baseName = 'dbcase-mybatis'
+    version = '1.0.0-SNAPSHOT'
+}
+
+dependencies {
+
+
+}

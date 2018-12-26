@@ -1,0 +1,4 @@
+include 'dbcase-jpa','dbcase-mybatis','dbcase-spring-data-jpa'
+
+rootProject.name = 'qingfeng-dbcase'
+
